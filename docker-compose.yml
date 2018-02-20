@@ -1,0 +1,30 @@
+django:
+  image: lh1284577/django25:20180220
+  volumes:
+    - ./ops:/data/ops
+    - ./mysql.sh:/tmp/mysql.sh
+    - ./lihao.sh:/opt/lihao.sh
+    - ./lihao.py:/opt/lihao.py
+    - ./lihao.yml:/opt/lihao.yml
+  restart: always
+  command: bash -x /tmp/mysql.sh
+  links:
+    - redis
+    - db
+db:
+  image: lh1284577/mysql:20170827
+  environment:
+    - MYSQL_DATABASE=yunwei
+    - MYSQL_ROOT_PASSWORD=root
+redis:
+  image: redis
+  command: redis-server
+nginx:
+  image: nginx
+  ports:
+    - 80:80
+  volumes:
+    - ./test.conf:/etc/nginx/conf.d/test.conf
+    - ./dist:/tmp/dist
+  links:
+   - django

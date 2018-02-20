@@ -1,0 +1,7 @@
+---
+- hosts: "{{ hosts }}"
+#  gather_facts: False
+  user: "{{ user }}"
+  tasks:
+    - name: mkdir docker item path
+      shell: ifconfig

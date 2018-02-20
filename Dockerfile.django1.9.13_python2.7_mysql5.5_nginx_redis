@@ -1,0 +1,7 @@
+FROM lh1284577/django:20170825
+RUN apt-get install nginx redis-server supervisor -y
+ADD test.conf /etc/nginx/conf.d/test.conf
+ADD supervisord.conf /etc/supervisor/supervisord.conf
+
+EXPOSE 3306 80 6379
+CMD ["/usr/bin/supervisord"]

@@ -1,0 +1,33 @@
+{
+    "paths": {
+        "v1/user/profile/": {
+            "get": {
+                "tags": [
+                    "v1"
+                ],
+                "description": "用户profile\n",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "title": "User",
+                            "type": "object",
+                            "properties": {
+                                "username": {
+                                    "type": "string"
+                                },
+                                "email": {
+                                    "type": "string"
+                                },
+                                "phone_number": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
