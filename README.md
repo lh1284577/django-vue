@@ -27,3 +27,5 @@
 /opt/目录下的： lihao.py , lihao.sh , lihao.yml
 
 
+###成功访问就会是这样：
+![Image text](https://github.com/lh1284577/django-vue/blob/master/%E9%85%8D%E5%9B%BE.png)
