@@ -29,6 +29,8 @@
 我提供了3个测试脚本分别是：
 /opt/目录下的： lihao.py , lihao.sh , lihao.yml
 
+### 顺便说一下，cmdb_fe是我的vue源码，也是刚开始写，有兴趣还请多指教
+
 
 ### 成功访问就会是这样：
 ![Image text](https://github.com/lh1284577/django-vue/blob/master/%E9%85%8D%E5%9B%BE.png)
