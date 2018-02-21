@@ -28,7 +28,7 @@
 ## 实际体验
 我提供了3个测试脚本分别是：
 /opt/目录下的： lihao.py , lihao.sh , lihao.yml
-
+由于测试原因，服务器只和本机SSH打通，所以默认可以连接localhost
 ### 顺便说一下，cmdb_fe是我的vue源码，也是刚开始写，有兴趣还请多指教
 
 
