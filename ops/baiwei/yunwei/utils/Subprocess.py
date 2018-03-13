@@ -32,7 +32,6 @@ class Subprocess:
 		filelist = ['/tmp/' + i for i in filelist ]
 		filelist = ' '.join(filelist)
 		for ip in iplist.keys():
-			print "===============%s" % iplist[ip]
 			if iplist[ip] == -1:
 				self.run('echo "error" > /tmp/rsyncfiletemp/%s.log &' % ip)
 			else:

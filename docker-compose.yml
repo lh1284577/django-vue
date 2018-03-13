@@ -6,6 +6,7 @@ django:
     - ./lihao.sh:/opt/lihao.sh
     - ./lihao.py:/opt/lihao.py
     - ./lihao.yml:/opt/lihao.yml
+    - ./tmp/1.txt:/tmp/1.txt
   restart: always
   command: bash -x /tmp/mysql.sh
   links:

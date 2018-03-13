@@ -167,5 +167,4 @@ def lsDir(request):
         if request.method == "GET":
 		dir = request.GET['dir']
 		out = os.popen('ls -l %s' % dir).readlines()
-		print "=========%s" % out
 		return JsonResponse({'msg':out,'code':0})
