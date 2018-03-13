@@ -20,5 +20,9 @@ urlpatterns = patterns('',
     url(r'^api/', include(router.urls)),
 
     url(r'api/deploy$',views.deploy),
+    url(r'api/upload$',views.upload),
+    url(r'api/rsyncFile$',views.rsyncFile),
+    url(r'api/rsyncFileResoult$',views.rsyncFileResoult),
+    url(r'api/lsDir$',views.lsDir),
     url(r'api/deployResoult$',views.deployResoult),
 )

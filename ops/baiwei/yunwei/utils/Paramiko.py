@@ -24,6 +24,7 @@ class Paramiko:
 		except:
 			Redis.lpush(rediskey,u'%s服务器，用户认证失败或IP没有和跳板机打通ssh' % self.ip)
 			Redis.lpush(rediskey,'Deploy End')
+			return False
 
 
 

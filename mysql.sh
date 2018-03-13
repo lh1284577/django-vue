@@ -1,3 +1,4 @@
+apt-get install rsync -y
 /etc/init.d/ssh start
 /etc/init.d/redis-server start
 /etc/init.d/mysql start
