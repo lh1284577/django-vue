@@ -10,6 +10,7 @@ class APBase(object):
     def getRedisConnection():
         '''根据数据源标识获取Redis连接池'''
 	redisip = socket.gethostbyname('redis')
+#	redisip = socket.gethostbyname('127.0.0.1')
         redis.ConnectionPool(port='6379')
         connection = redis.Redis()
         return connection
